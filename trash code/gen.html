@@ -1,10 +1,16 @@
 <!DOCTYPE html> 
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://codepen.io/ninivert/pen/YWVJqO">
-    <link rel="stylesheet" href="gen.js">
+    <!-- <link rel="stylesheet" href="gen.js"> -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="gen.js"></script>
     <link rel="stylesheet" type="text/css" href="gen.css">
 </head>
 <body>
@@ -16,7 +22,10 @@
     </div>
   </div>
   
-  
+  <div id="giphy">
+
+
+  </div>
   
   <div>
     <h3><i class="fa fa-picture-o fa-fw" aria-hidden="true"></i>Source Image</h3>
@@ -83,6 +92,11 @@
 
 
   </div>
+  <!-- api test -->
+  <input id="searchtext" type="text" placeholder="Search..">
+  <button id="searchgifs" type="submit" onclick="getData()">Text</button>
+  <div class="inner"></div>
+  <!-- api test -->
 </div>
 </body>
 </html>
