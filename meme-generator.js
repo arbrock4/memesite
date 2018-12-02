@@ -67,9 +67,12 @@ function init () {
             let img = new Image;
             img.src = reader.result;
             generateMeme(img, topTextInput.value, bottomTextInput.value, topTextSizeInput.value, bottomTextSizeInput.value);
+            image.onload = () =>
+            {generateMeme(image)};
         };
         reader.readAsDataURL(imageInput.files[0]);
     });
 }
+
 
 init();
